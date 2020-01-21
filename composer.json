@@ -1,0 +1,40 @@
+{
+  "name": "bereza-evgenij/dadata-php-sdk",
+  "description": "Inegration (SDK) with DaData for PHP",
+  "keywords": [
+    "DaData",
+    "sdk",
+    "integration",
+    "REST"
+  ],
+  "minimum-stability": "dev",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Evgeny Bereza",
+      "email": "bereza.evgenij@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "php-curl-class/php-curl-class": "^8.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Bereza\\DaData\\Tests\\": "tests/"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Bereza\\DaData\\": "src"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
